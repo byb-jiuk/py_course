@@ -1,0 +1,172 @@
+Python 3.13.1 (main, Jan 16 2025, 13:50:41) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1+4
+5
+>>> 7*77
+539
+>>> print("Hello")
+Hello
+>>> print
+<built-in function print>
+>>> print Hello
+  File "<python-input-4>", line 1
+    print Hello
+    ^^^^^^^^^^^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+>>> print ()
+>>> priny ("My name is Саша")
+Traceback (most recent call last):
+  File "<python-input-6>", line 1, in <module>
+    priny ("My name is Саша")
+    ^^^^^
+NameError: name 'priny' is not defined. Did you mean: 'print'?
+>>> print ("My name is Саша")
+My name is Саша
+>>> my name
+  File "<python-input-8>", line 1
+    my name
+       ^^^^
+SyntaxError: invalid syntax
+>>> my_name
+Traceback (most recent call last):
+  File "<python-input-9>", line 1, in <module>
+    my_name
+NameError: name 'my_name' is not defined
+>>> print ()
+
+>>> print )
+  File "<python-input-11>", line 1
+    print )
+          ^
+SyntaxError: unmatched ')'
+>>> print ('My name is Саша")
+  File "<python-input-12>", line 1
+    print ('My name is Саша")
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print ('My name is Саша')
+My name is Саша
+>>> print ('hello\n my\n world')
+hello
+ my
+ world
+>>> print('\')
+  File "<python-input-15>", line 1
+    print('\')
+          ^
+SyntaxError: unterminated string literal (detected at line 1); perhaps you escaped the end quote?
+>>> print('\\')
+\
+>>> print('mama'papa')
+  File "<python-input-17>", line 1
+    print('mama'papa')
+                    ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print('mama\'papa')
+mama'papa
+>>> print('mama"papa')
+mama"papa
+>>> print(1, 2, 4," mama")
+1 2 4  mama
+>>> print(1,2,3,4, sep="***")
+1***2***3***4
+>>> print(1,2,3,4, sep="***", end="\n**\n")
+1***2***3***4
+**
+>>> print(1,2,3, sep ="***" )
+1***2***3
+>>> print(1,2,3, sep ="***",end="*",4 )
+  File "<python-input-24>", line 1
+    print(1,2,3, sep ="***",end="*",4 )
+                                      ^
+SyntaxError: positional argument follows keyword argument
+>>> print(1,2,3, sep ="***",end="*",4)
+  File "<python-input-25>", line 1
+    print(1,2,3, sep ="***",end="*",4)
+                                     ^
+SyntaxError: positional argument follows keyword argument
+>>> print(1,2,3, sep ="***",end="*")
+1***2***3*>>> print(1,2,3, sep ="***",end="...")
+1***2***3...>>> print(1,2,3, sep ="***",end="...4")
+1***2***3...4>>> print(1,2,3, sep ="***",end="...4\n")
+1***2***3...4
+>>> print()
+
+>>> 1000
+1000
+>>> -1000
+-1000
+>>> 2500
+2500
+>>> -4000
+-4000
+>>> 1.2
+1.2
+>>> .500
+0.5
+>>> -8.5
+-8.5
+>>> 555555
+555555
+>>> 555_555
+555555
+>>> print("""dgadfgdag
+... sgsgdsdg
+... sdfsdfsf
+... sdfdsfs
+... sdfdsfs""")
+dgadfgdag
+sgsgdsdg
+sdfsdfsf
+sdfdsfs
+sdfdsfs
+>>> print(""" "1"
+... ""2""
+... \""5""\"
+... """)
+ "1"
+""2""
+""5"""
+
+>>> 23e5
+2300000.0
+>>> 23e10
+230000000000.0
+>>> 23e-4
+0.0023
+>>> 10
+10
+>>> ten = 10
+>>> ten
+10
+>>> ten + 9
+19
+>>> 1age = 99
+  File "<python-input-49>", line 1
+    1age = 99
+    ^
+SyntaxError: invalid decimal literal
+>>> ag e = 88
+  File "<python-input-50>", line 1
+    ag e = 88
+       ^
+SyntaxError: invalid syntax
+>>> Age = 99
+>>> ten + Age - ten
+99
+>>> type(Age)
+<class 'int'>
+>>> Age = "sdfsdf"
+>>> type(age)
+Traceback (most recent call last):
+  File "<python-input-55>", line 1, in <module>
+    type(age)
+         ^^^
+NameError: name 'age' is not defined. Did you mean: 'Age'?
+>>> type(Age)
+<class 'str'>
+>>> 2/2
+1.0
+>>> 2.0+2
+4.0
+>>> 
