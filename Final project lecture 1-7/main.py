@@ -1,5 +1,5 @@
-import best_film_logic as bf
-import best_films_list as fl
+import package.best_film_logic as bf
+import package.best_films_list as fl
 
 def main():
     """Функция позволяющая вызывать меню для создания фильма, удаления,
