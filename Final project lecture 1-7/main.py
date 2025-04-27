@@ -1,9 +1,9 @@
 import best_film_logic as bf
-import films_list as fl
+import best_films_list as fl
 
 def main():
     """Функция позволяющая вызывать меню для создания фильма, удаления,
-    средней отметки, показывать фильмы и выход из программы."""
+    средней отметки, показывать лучший фильмы и выход из программы."""
     movies_grades = {}  # Initialize the dictionary here
     msg = """
 1 - Ввести новый фильм или добавить оценку существующему
@@ -29,7 +29,7 @@ exit - выйти из программы \n
                     genre = movies_grades[name.title()]["genre"]
                     print(f"Фильм '{name}' уже существует. Жанр: {genre} \n")
                 try:
-                    grade = float(input("Введите отметку: "))
+                    grade = float(input("Введите оценку фильма: "))
                     fl.new_movie(movies_grades, name, genre, grade)
                     print("Запись успешно добавлена \n")  # Вызов функции ввода нового фильма
                 except ValueError:

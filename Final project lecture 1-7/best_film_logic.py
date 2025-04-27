@@ -2,7 +2,6 @@ def avg(score):
     """функция для вычисления средней отметки фильма."""
     return round((sum(score)/len(score)), 2)
 
-
 def show_movies(movies_grades):
     """Функия, показывающая оценки фильма."""
     print("Список фильмов \n")
