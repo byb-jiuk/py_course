@@ -1,0 +1,1 @@
+update user set u_name = "Котик", u_surname="БОБ" where u_id = 1;

@@ -1,0 +1,1 @@
+update task set t_name = "Отдыхать", t_priority=100000 where t_id = 4;
